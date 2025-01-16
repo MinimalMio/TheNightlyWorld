@@ -26,3 +26,6 @@ eclipse
 .vscode/
 bin/
 .classpath
+
+# other
+.java-version
