@@ -2,4 +2,4 @@
 
 A Minecraft 1.7.10 Mod.
 
-Still in early development.
+Develop stage: Eternal Alpha.
