@@ -4,8 +4,8 @@
 itemGroup.nightly_tab=The Nightly World
 
 # Items
-item.light_fragment=Light Fragment
+item.light_fragment.name=Light Fragment
 
-# 方块
-# 深渊系列方块
-block.abyss_stone=Abyss Stone
+# Block
+# Abyss blocks
+tile.abyss_stone.name=Abyss Stone

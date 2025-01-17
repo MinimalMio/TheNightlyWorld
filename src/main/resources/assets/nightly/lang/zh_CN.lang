@@ -2,8 +2,8 @@
 itemGroup.nightly_tab=永夜之界
 
 # 物品
-item.light_fragment=光之碎片
+item.light_fragment.name=光之碎片
 
 # 方块
 # 深渊系列方块
-block.abyss_stone=深渊石块
+tile.abyss_stone.name=深渊石块
