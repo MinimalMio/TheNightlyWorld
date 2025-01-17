@@ -5,12 +5,14 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
+import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import moe.mmio.nightly.creativetabs.ModCreativeTabs;
 import moe.mmio.nightly.items.ModItems;
+import moe.mmio.nightly.eventhandlers.CommonEventHandler;
 
 @Mod(modid = NightlyMod.MODID, version = NightlyMod.VERSION, name = NightlyMod.MODNAME)
 public class NightlyMod {
@@ -20,14 +22,7 @@ public class NightlyMod {
 
   @EventHandler
   public void preInit(FMLPreInitializationEvent event) {
-    MinecraftServer server = MinecraftServer.getServer();
-    if (server != null && server.worldServers != null) {
-      WorldServer worldServer = server.worldServers[0];
-      GameRules gameRules = worldServer.getGameRules();
-      if (!gameRules.hasRule("foreverNight")) {
-        gameRules.setOrCreateGameRule("foreverNight", "true");
-      }
-    }
+    
   }
 
   @EventHandler
@@ -35,17 +30,7 @@ public class NightlyMod {
     /* Main Registry */
     ModItems.mainRegistry();
 
-    /* Listen on game rules and control times. */
-    MinecraftServer server = MinecraftServer.getServer();
-    if (server != null && server.isSinglePlayer()) {
-      World world = server.worldServers[0];
-      if (world != null) {
-        GameRules gameRules = world.getGameRules();
-        if (gameRules.getGameRuleBooleanValue("foreverNight")) {
-          // set time to 18000(midnight)
-          world.setWorldTime(18000);
-        }
-      }
-    }
+    /* Events Registry */
+    MinecraftForge.EVENT_BUS.register(new CommonEventHandler());
   }
 }
