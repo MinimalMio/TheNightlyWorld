@@ -21,7 +21,7 @@ public class NightlyMod {
   @EventHandler
   public void preInit(FMLPreInitializationEvent event) {
     MinecraftServer server = MinecraftServer.getServer();
-    if (server != null && server.worldServers != null && server.worldServers.length > 0) {
+    if (server != null && server.worldServers != null) {
       WorldServer worldServer = server.worldServers[0];
       GameRules gameRules = worldServer.getGameRules();
       if (!gameRules.hasRule("foreverNight")) {
