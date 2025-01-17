@@ -4,6 +4,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -19,9 +20,13 @@ public class NightlyMod {
 
   @EventHandler
   public void preInit(FMLPreInitializationEvent event) {
-    GameRules gameRules = MinecraftServer.getServer().worldServers[0].getGameRules();
-    if (!gameRules.hasRule("foreverNight")) {
-      gameRules.setOrCreateGameRule("foreverNight", "true");
+    MinecraftServer server = MinecraftServer.getServer();
+    if (server != null && server.worldServers != null && server.worldServers.length > 0) {
+      WorldServer worldServer = server.worldServers[0];
+      GameRules gameRules = worldServer.getGameRules();
+      if (!gameRules.hasRule("foreverNight")) {
+        gameRules.setOrCreateGameRule("foreverNight", "true");
+      }
     }
   }
 
