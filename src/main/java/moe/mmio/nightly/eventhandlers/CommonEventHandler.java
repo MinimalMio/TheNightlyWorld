@@ -1,5 +1,6 @@
 package moe.mmio.nightly.eventhandlers;
 
+import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLServerStartedEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
@@ -11,13 +12,15 @@ import net.minecraft.world.WorldServer;
 
 public class CommonEventHandler {
 
-  @EventHandler
+  /*
+  @Mod.EventHandler
   public static void serverStarting(FMLServerStartingEvent event) {
     MinecraftServer server = event.getServer();
     server.worldServers[0].getGameRules().addGameRule("foreverNight", "true");
   }
+  */
 
-  @EventHandler
+  @SubscribeEvent
   public static void onWorldTick(TickEvent.WorldTickEvent event) {
     if (!event.world.isRemote && event.world instanceof WorldServer) {
       WorldServer worldServer = (WorldServer) event.world;

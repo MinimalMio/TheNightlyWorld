@@ -5,6 +5,7 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import moe.mmio.nightly.items.ModItems;
 import moe.mmio.nightly.eventhandlers.CommonEventHandler;
 
@@ -23,8 +24,11 @@ public class NightlyMod {
   public void init(FMLInitializationEvent event) {
     /* Main Registry */
     ModItems.mainRegistry();
+  }
 
-    /* Events Registry */
+  @EventHandler
+  public static void serverStarting(FMLServerStartingEvent event) {
     MinecraftForge.EVENT_BUS.register(new CommonEventHandler());
+    event.getServer().worldServers[0].getGameRules().addGameRule("foreverNight", "true");
   }
 }
