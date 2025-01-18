@@ -12,16 +12,8 @@ import net.minecraft.world.WorldServer;
 
 public class ForeverNightEventHandler {
 
-  /*
-  @Mod.EventHandler
-  public static void serverStarting(FMLServerStartingEvent event) {
-    MinecraftServer server = event.getServer();
-    server.worldServers[0].getGameRules().addGameRule("foreverNight", "true");
-  }
-  */
-
   @SubscribeEvent
-  public static void onWorldTick(TickEvent.WorldTickEvent event) {
+  public void onWorldTick(TickEvent.WorldTickEvent event) {
     if (!event.world.isRemote && event.world instanceof WorldServer) {
       WorldServer worldServer = (WorldServer) event.world;
       GameRules gameRules = worldServer.getGameRules();
