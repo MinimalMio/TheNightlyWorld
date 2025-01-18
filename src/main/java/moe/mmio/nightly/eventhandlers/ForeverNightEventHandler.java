@@ -10,7 +10,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.GameRules;
 import net.minecraft.world.WorldServer;
 
-public class CommonEventHandler {
+public class ForeverNightEventHandler {
 
   /*
   @Mod.EventHandler
