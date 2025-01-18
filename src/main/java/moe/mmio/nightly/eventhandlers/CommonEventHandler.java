@@ -29,8 +29,13 @@ public class CommonEventHandler {
       boolean foreverNight = gameRules.getGameRuleBooleanValue("foreverNight");
 
       if (foreverNight) {
-        // 18000: mid-night.
-        worldServer.setWorldTime(18000);
+        gameRules.setOrCreateGameRule("doDaylightCycle", "false");
+        
+        if (worldServer.getWorldTime() != 18000) {
+          worldServer.setWorldTime(18000);
+        }
+      } else {
+        gameRules.setOrCreateGameRule("doDaylightCycle", "true");
       }
     }
   }
