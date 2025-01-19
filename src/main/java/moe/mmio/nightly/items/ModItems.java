@@ -28,7 +28,7 @@ public class ModItems {
   public static void initializeItems() {
     light_fragment = new Item().setUnlocalizedName("light_fragment").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":light_fragment").setCreativeTab(nightlyModCreativeTab);
     moonlight_crystal = new Item().setUnlocalizedName("moonlight_crystal").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":moonlight_crystal").setCreativeTab(nightlyModCreativeTab);
-    moonlight_brick = new Item().setUnlocalizedName("moonlight_brick").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":moonlight_brick");
+    moonlight_brick = new Item().setUnlocalizedName("moonlight_brick").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":moonlight_brick").setCreativeTab(nightlyModCreativeTab);
 
     abyss_stone = new BlockAbyssStone(Material.rock).setCreativeTab(nightlyModCreativeTab);
     moonlight_brick_block = new BlockMoonlightBrick(Material.rock).setCreativeTab(nightlyModCreativeTab);
