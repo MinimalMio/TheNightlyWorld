@@ -5,7 +5,10 @@ itemGroup.nightly_tab=The Nightly World
 
 # Items
 item.light_fragment.name=Light Fragment
+item.moonlight_crystal.name=Moonlight Crystal
+item.moonlight_brick.name=Moonlight Brick
 
 # Block
 # Abyss blocks
 tile.abyss_stone.name=Abyss Stone
+tile.moonlight_brick_block.name=Moonlight Brick Block
