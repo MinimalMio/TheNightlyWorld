@@ -3,6 +3,7 @@ package moe.mmio.nightly.items;
 import cpw.mods.fml.common.registry.GameRegistry;
 import moe.mmio.nightly.NightlyMod;
 import moe.mmio.nightly.blocks.BlockAbyssStone;
+import moe.mmio.nightly.blocks.BlockDungeonBrick;
 import moe.mmio.nightly.blocks.BlockMoonlightBrick;
 import moe.mmio.nightly.creativetabs.ModCreativeTabs;
 import net.minecraft.block.material.Material;
@@ -24,6 +25,7 @@ public class ModItems {
 
   public static Block abyss_stone;
   public static Block moonlight_brick_block;
+  public static Block dungeon_block;
 
   public static void initializeItems() {
     light_fragment = new Item().setUnlocalizedName("light_fragment").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":light_fragment").setCreativeTab(nightlyModCreativeTab);
@@ -32,6 +34,7 @@ public class ModItems {
 
     abyss_stone = new BlockAbyssStone(Material.rock).setCreativeTab(nightlyModCreativeTab);
     moonlight_brick_block = new BlockMoonlightBrick(Material.rock).setCreativeTab(nightlyModCreativeTab);
+    dungeon_block = new BlockDungeonBrick(Material.rock).setCreativeTab(nightlyModCreativeTab);
   }
 
   public static void registerItems() {
@@ -41,5 +44,6 @@ public class ModItems {
 
     GameRegistry.registerBlock(abyss_stone, abyss_stone.getUnlocalizedName());
     GameRegistry.registerBlock(moonlight_brick_block, moonlight_brick_block.getUnlocalizedName());
+    GameRegistry.registerBlock(dungeon_block, dungeon_block.getUnlocalizedName());
   }
 }

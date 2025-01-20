@@ -10,3 +10,4 @@ item.moonlight_brick.name=月光砖
 # 深渊系列方块
 tile.abyss_stone.name=深渊石块
 tile.moonlight_brick_block.name=月光砖块
+tile.dungeon_block.name=地牢石砖
