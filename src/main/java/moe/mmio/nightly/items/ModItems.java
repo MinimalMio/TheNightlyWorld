@@ -22,6 +22,7 @@ public class ModItems {
   public static Item light_fragment;
   public static Item moonlight_crystal;
   public static Item moonlight_brick;
+  public static Item rag;
 
   public static Block abyss_stone;
   public static Block moonlight_brick_block;
@@ -31,6 +32,7 @@ public class ModItems {
     light_fragment = new Item().setUnlocalizedName("light_fragment").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":light_fragment").setCreativeTab(nightlyModCreativeTab);
     moonlight_crystal = new Item().setUnlocalizedName("moonlight_crystal").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":moonlight_crystal").setCreativeTab(nightlyModCreativeTab);
     moonlight_brick = new Item().setUnlocalizedName("moonlight_brick").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":moonlight_brick").setCreativeTab(nightlyModCreativeTab);
+    rag = new Item().setUnlocalizedName("rag").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":rag").setCreativeTab(nightlyModCreativeTab);
 
     abyss_stone = new BlockAbyssStone(Material.rock).setCreativeTab(nightlyModCreativeTab);
     moonlight_brick_block = new BlockMoonlightBrick(Material.rock).setCreativeTab(nightlyModCreativeTab);
@@ -41,6 +43,7 @@ public class ModItems {
     GameRegistry.registerItem(light_fragment, light_fragment.getUnlocalizedName());
     GameRegistry.registerItem(moonlight_crystal, moonlight_crystal.getUnlocalizedName());
     GameRegistry.registerItem(moonlight_brick, moonlight_brick.getUnlocalizedName());
+    GameRegistry.registerItem(rag, rag.getUnlocalizedName());
 
     GameRegistry.registerBlock(abyss_stone, abyss_stone.getUnlocalizedName());
     GameRegistry.registerBlock(moonlight_brick_block, moonlight_brick_block.getUnlocalizedName());

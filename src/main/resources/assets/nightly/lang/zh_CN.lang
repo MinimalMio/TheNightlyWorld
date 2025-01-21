@@ -5,6 +5,7 @@ itemGroup.nightly_tab=永夜之界
 item.light_fragment.name=光之碎片
 item.moonlight_crystal.name=月光晶体
 item.moonlight_brick.name=月光砖
+item.rag.name=破布
 
 # 方块
 # 深渊系列方块
