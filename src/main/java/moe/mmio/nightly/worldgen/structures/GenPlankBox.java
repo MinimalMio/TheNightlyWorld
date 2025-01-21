@@ -23,6 +23,10 @@ public class GenPlankBox implements IWorldGenerator {
             int x = chunkX * 16 + random.nextInt(16);
             int z = chunkZ * 16 + random.nextInt(16);
             int y = world.getHeightValue(x, z);
+
+            if (world.getBiomeGenForCoords(x, z).biomeName.equals("Plains") && random.nextDouble() < 0.0555) {
+                genStructure(world, random, x, y, z);
+            }
         }
     }
     
