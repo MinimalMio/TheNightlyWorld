@@ -24,7 +24,8 @@ public class GenPlankBox implements IWorldGenerator {
             int z = chunkZ * 16 + random.nextInt(16);
             int y = world.getHeightValue(x, z);
 
-            if (world.getBiomeGenForCoords(x, z).biomeName.equals("Plains") && random.nextDouble() < 0.0555) {
+            // 仅在平原生成且概率仅为 1.10%
+            if (world.getBiomeGenForCoords(x, z).biomeName.equals("Plains") && random.nextDouble() < 0.0110) {
                 genStructure(world, random, x, y, z);
             }
         }
