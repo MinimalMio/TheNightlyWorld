@@ -7,6 +7,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import moe.mmio.nightly.items.ModItems;
+import moe.mmio.nightly.recipes.ModRecipes;
 import moe.mmio.nightly.worldgen.ModGenerators;
 import moe.mmio.nightly.eventhandlers.ForeverNightEventHandler;
 
@@ -26,6 +27,7 @@ public class NightlyMod {
     /* Main Registry */
     ModItems.mainRegistry();
     ModGenerators.registerModGenerators();
+    ModRecipes.recipesRegistry();
 
     /* Events registry */
     MinecraftForge.EVENT_BUS.register(new ForeverNightEventHandler());
