@@ -68,6 +68,11 @@ public class ModItems {
     GameRegistry.registerItem(moonlight_brick, moonlight_brick.getUnlocalizedName());
     GameRegistry.registerItem(rag, rag.getUnlocalizedName());
 
+    GameRegistry.registerItem(rag_helmet, rag_helmet.getUnlocalizedName());
+    GameRegistry.registerItem(rag_chestplate, rag_chestplate.getUnlocalizedName());
+    GameRegistry.registerItem(rag_legging, rag_legging.getUnlocalizedName());
+    GameRegistry.registerItem(rag_boots, rag_boots.getUnlocalizedName());
+
     GameRegistry.registerBlock(abyss_stone, abyss_stone.getUnlocalizedName());
     GameRegistry.registerBlock(moonlight_brick_block, moonlight_brick_block.getUnlocalizedName());
     GameRegistry.registerBlock(dungeon_block, dungeon_block.getUnlocalizedName());
