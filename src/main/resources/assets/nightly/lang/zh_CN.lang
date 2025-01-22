@@ -7,6 +7,13 @@ item.moonlight_crystal.name=月光晶体
 item.moonlight_brick.name=月光砖
 item.rag.name=破布
 
+# 盔甲
+# 破布系列盔甲
+item.rag_helmet.name=破布帽
+item.rag_chestplate.name=破布衫
+item.rag_legging.name=破布裤
+item.rag_boots.name=破布鞋
+
 # 方块
 # 深渊系列方块
 tile.abyss_stone.name=深渊石块

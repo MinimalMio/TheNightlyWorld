@@ -9,6 +9,13 @@ item.moonlight_crystal.name=Moonlight Crystal
 item.moonlight_brick.name=Moonlight Brick
 item.rag.name=Rag
 
+# Armors
+# Rag
+item.rag_helmet.name=Rag Cap
+item.rag_chestplate.name=Rag Chestplate
+item.rag_legging.name=Rag Legging
+item.rag_boots.name=Rag Boots
+
 # Block
 # Abyss blocks
 tile.abyss_stone.name=Abyss Stone
