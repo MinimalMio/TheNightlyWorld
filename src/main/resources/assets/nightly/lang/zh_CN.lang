@@ -7,6 +7,13 @@ item.moonlight_crystal.name=月光晶体
 item.moonlight_brick.name=月光砖
 item.rag.name=破布
 
+item.iron_gel.name=铁凝胶
+item.coal_gel.name=煤凝胶
+item.lapis_gel.name=青金石凝胶
+item.redstone_gel.name=红石凝胶
+item.diamond_gel.name=钻石凝胶
+item.gold_gel.name=金凝胶
+
 # 盔甲
 # 破布系列盔甲
 item.rag_helmet.name=破布帽

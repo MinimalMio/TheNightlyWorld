@@ -25,6 +25,14 @@ public class ModItems {
   public static Item moonlight_brick;
   public static Item rag;
 
+  /* 矿物凝胶系列物品，由史莱姆掉落 */
+  public static Item iron_gel;
+  public static Item coal_gel;
+  public static Item lapis_gel;
+  public static Item redstone_gel;
+  public static Item diamond_gel;
+  public static Item gold_gel;
+
   public static Item rag_helmet;
   public static Item rag_chestplate;
   public static Item rag_legging;
@@ -39,6 +47,13 @@ public class ModItems {
     moonlight_crystal = new Item().setUnlocalizedName("moonlight_crystal").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":moonlight_crystal").setCreativeTab(nightlyModCreativeTab);
     moonlight_brick = new Item().setUnlocalizedName("moonlight_brick").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":moonlight_brick").setCreativeTab(nightlyModCreativeTab);
     rag = new Item().setUnlocalizedName("rag").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":rag").setCreativeTab(nightlyModCreativeTab);
+
+    iron_gel = new Item().setUnlocalizedName("iron_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":iron_gel").setCreativeTab(nightlyModCreativeTab);
+    coal_gel = new Item().setUnlocalizedName("coal_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":coal_gel").setCreativeTab(nightlyModCreativeTab);
+    lapis_gel = new Item().setUnlocalizedName("lapis_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":lapis_gel").setCreativeTab(nightlyModCreativeTab);
+    redstone_gel = new Item().setUnlocalizedName("redstone_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":redstone_gel").setCreativeTab(nightlyModCreativeTab);
+    diamond_gel = new Item().setUnlocalizedName("diamond_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":diamond_gel").setCreativeTab(nightlyModCreativeTab);
+    gold_gel = new Item().setUnlocalizedName("gold_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":gold_gel").setCreativeTab(nightlyModCreativeTab);
 
     rag_helmet = new RagArmor(0)
       .setUnlocalizedName("rag_helmet")
@@ -67,6 +82,13 @@ public class ModItems {
     GameRegistry.registerItem(moonlight_crystal, moonlight_crystal.getUnlocalizedName());
     GameRegistry.registerItem(moonlight_brick, moonlight_brick.getUnlocalizedName());
     GameRegistry.registerItem(rag, rag.getUnlocalizedName());
+
+    GameRegistry.registerItem(iron_gel, iron_gel.getUnlocalizedName());
+    GameRegistry.registerItem(coal_gel, coal_gel.getUnlocalizedName());
+    GameRegistry.registerItem(lapis_gel,lapis_gel.getUnlocalizedName());
+    GameRegistry.registerItem(redstone_gel, redstone_gel.getUnlocalizedName());
+    GameRegistry.registerItem(diamond_gel, diamond_gel.getUnlocalizedName());
+    GameRegistry.registerItem(gold_gel, gold_gel.getUnlocalizedName());
 
     GameRegistry.registerItem(rag_helmet, rag_helmet.getUnlocalizedName());
     GameRegistry.registerItem(rag_chestplate, rag_chestplate.getUnlocalizedName());

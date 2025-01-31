@@ -9,6 +9,13 @@ item.moonlight_crystal.name=Moonlight Crystal
 item.moonlight_brick.name=Moonlight Brick
 item.rag.name=Rag
 
+item.iron_gel.name=Iron Gel
+item.coal_gel.name=Coal Gel
+item.lapis_gel.name=Lapis Gel
+item.redstone_gel.name=Redstone Gel
+item.diamond_gel.name=Diamond Gel
+item.gold_gel.name=Gold Gel
+
 # Armors
 # Rag
 item.rag_helmet.name=Rag Cap
