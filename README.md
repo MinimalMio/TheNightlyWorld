@@ -4,6 +4,5 @@
 
 目前开发阶段：**Eternal alpha**
 
-[官方背景故事](docs/background.md)  
 [项目贡献指北](docs/contribute.md)  
 [官方 Telegram 群组](https://t.me/thenightlyworld)
