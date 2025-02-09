@@ -2,6 +2,7 @@ package moe.mmio.nightly.recipes;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import moe.mmio.nightly.items.ModItems;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 public class ModRecipes {
@@ -11,7 +12,12 @@ public class ModRecipes {
     }
 
     public static void initializeFurnaceRecipes() {
-        // PLACEHOLDER: 熔炉配方占留位
+        // 矿物凝胶
+        GameRegistry.addSmelting(new ItemStack(ModItems.coal_gel), new ItemStack(Items.coal), 0.3f);
+        GameRegistry.addSmelting(new ItemStack(ModItems.iron_gel), new ItemStack(Items.iron_ingot), 0.5f);
+        GameRegistry.addSmelting(new ItemStack(ModItems.gold_gel), new ItemStack(Items.gold_ingot), 0.5f);
+        GameRegistry.addSmelting(new ItemStack(ModItems.diamond_gel), new ItemStack(Items.diamond), 1.0f);
+        GameRegistry.addSmelting(new ItemStack(ModItems.redstone_gel), new ItemStack(Items.redstone), 0.4f);
     }
 
     public static void initializeCraftTableRecipes() {
