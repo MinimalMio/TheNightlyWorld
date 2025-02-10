@@ -9,7 +9,6 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import moe.mmio.nightly.items.ModItems;
 import moe.mmio.nightly.recipes.ModRecipes;
 import moe.mmio.nightly.worldgen.ModGenerators;
-import moe.mmio.nightly.eventhandlers.ForeverNightEventHandler;
 import moe.mmio.nightly.eventhandlers.SlimeDropEventHandler;
 
 @Mod(modid = NightlyMod.MODID, version = NightlyMod.VERSION, name = NightlyMod.MODNAME)
@@ -31,7 +30,7 @@ public class NightlyMod {
     ModRecipes.recipesRegistry();
 
     /* Events registry */
-    MinecraftForge.EVENT_BUS.register(new ForeverNightEventHandler());
+    // MinecraftForge.EVENT_BUS.register(new ForeverNightEventHandler());
     MinecraftForge.EVENT_BUS.register(new SlimeDropEventHandler());
   }
 
