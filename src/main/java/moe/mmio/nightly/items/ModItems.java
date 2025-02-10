@@ -6,11 +6,13 @@ import moe.mmio.nightly.armors.RagArmor;
 import moe.mmio.nightly.blocks.BlockAbyssStone;
 import moe.mmio.nightly.blocks.BlockDungeonBrick;
 import moe.mmio.nightly.blocks.BlockMoonlightBrick;
+import moe.mmio.nightly.blocks.BlockNightMushroom;
 import moe.mmio.nightly.creativetabs.ModCreativeTabs;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockMushroom;
 
 public class ModItems {
   public static void mainRegistry() {
@@ -43,6 +45,8 @@ public class ModItems {
   public static Block abyss_stone;
   public static Block moonlight_brick_block;
   public static Block dungeon_block;
+
+  public static Block night_mushroom;
 
   public static void initializeItems() {
     light_fragment = new Item().setUnlocalizedName("light_fragment").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":light_fragment").setCreativeTab(nightlyModCreativeTab);
@@ -79,6 +83,7 @@ public class ModItems {
     abyss_stone = new BlockAbyssStone(Material.rock).setCreativeTab(nightlyModCreativeTab);
     moonlight_brick_block = new BlockMoonlightBrick(Material.rock).setCreativeTab(nightlyModCreativeTab);
     dungeon_block = new BlockDungeonBrick(Material.rock).setCreativeTab(nightlyModCreativeTab);
+    night_mushroom = new BlockNightMushroom().setCreativeTab(nightlyModCreativeTab);
   }
 
   public static void registerItems() {
@@ -104,5 +109,7 @@ public class ModItems {
     GameRegistry.registerBlock(abyss_stone, abyss_stone.getUnlocalizedName());
     GameRegistry.registerBlock(moonlight_brick_block, moonlight_brick_block.getUnlocalizedName());
     GameRegistry.registerBlock(dungeon_block, dungeon_block.getUnlocalizedName());
+
+    GameRegistry.registerBlock(night_mushroom, night_mushroom.getUnlocalizedName());
   }
 }
