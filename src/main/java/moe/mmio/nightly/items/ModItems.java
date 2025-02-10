@@ -53,7 +53,7 @@ public class ModItems {
     moonlight_brick = new Item().setUnlocalizedName("moonlight_brick").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":moonlight_brick").setCreativeTab(nightlyModCreativeTab);
     rag = new Item().setUnlocalizedName("rag").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":rag").setCreativeTab(nightlyModCreativeTab);
 
-    enchanted_raindial = new Item().setUnlocalizedName("enchanted_raindial").setMaxStackSize(1).setTextureName(NightlyMod.MODID + "enchanted_raindial").setCreativeTab(nightlyModCreativeTab);
+    enchanted_raindial = new ItemRainDial().setCreativeTab(nightlyModCreativeTab);
 
     iron_gel = new Item().setUnlocalizedName("iron_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":iron_gel").setCreativeTab(nightlyModCreativeTab);
     coal_gel = new Item().setUnlocalizedName("coal_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":coal_gel").setCreativeTab(nightlyModCreativeTab);
