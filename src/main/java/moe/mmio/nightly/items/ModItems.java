@@ -25,6 +25,8 @@ public class ModItems {
   public static Item moonlight_brick;
   public static Item rag;
 
+  public static Item enchanted_raindial;
+
   /* 矿物凝胶系列物品，由史莱姆掉落 */
   public static Item iron_gel;
   public static Item coal_gel;
@@ -47,6 +49,8 @@ public class ModItems {
     moonlight_crystal = new Item().setUnlocalizedName("moonlight_crystal").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":moonlight_crystal").setCreativeTab(nightlyModCreativeTab);
     moonlight_brick = new Item().setUnlocalizedName("moonlight_brick").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":moonlight_brick").setCreativeTab(nightlyModCreativeTab);
     rag = new Item().setUnlocalizedName("rag").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":rag").setCreativeTab(nightlyModCreativeTab);
+
+    enchanted_raindial = new Item().setUnlocalizedName("enchanted_raindial").setMaxStackSize(1).setTextureName(NightlyMod.MODID + "enchanted_raindial").setCreativeTab(nightlyModCreativeTab);
 
     iron_gel = new Item().setUnlocalizedName("iron_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":iron_gel").setCreativeTab(nightlyModCreativeTab);
     coal_gel = new Item().setUnlocalizedName("coal_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":coal_gel").setCreativeTab(nightlyModCreativeTab);
@@ -82,6 +86,8 @@ public class ModItems {
     GameRegistry.registerItem(moonlight_crystal, moonlight_crystal.getUnlocalizedName());
     GameRegistry.registerItem(moonlight_brick, moonlight_brick.getUnlocalizedName());
     GameRegistry.registerItem(rag, rag.getUnlocalizedName());
+
+    GameRegistry.registerItem(enchanted_raindial, enchanted_raindial.getUnlocalizedName());
 
     GameRegistry.registerItem(iron_gel, iron_gel.getUnlocalizedName());
     GameRegistry.registerItem(coal_gel, coal_gel.getUnlocalizedName());
