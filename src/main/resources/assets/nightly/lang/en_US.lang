@@ -18,6 +18,14 @@ item.redstone_gel.name=Redstone Gel
 item.diamond_gel.name=Diamond Gel
 item.gold_gel.name=Gold Gel
 
+item.devine_rune.name=Devine Rune
+item.doomsday_core.name=Doomsday Core
+
+mode.devine.enabled=Your soul is mine.
+mode.devine.disabled=Idiot, take this thing back.
+mode.doomsday.enabled=Are you ready for the end?
+mode.doomsday.disabled=Okay, you're really not ready.
+
 # Armors
 # Rag
 item.rag_helmet.name=Rag Cap

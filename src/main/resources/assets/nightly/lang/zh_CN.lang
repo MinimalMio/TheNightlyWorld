@@ -16,6 +16,14 @@ item.redstone_gel.name=红石凝胶
 item.diamond_gel.name=钻石凝胶
 item.gold_gel.name=金凝胶
 
+item.devine_rune.name=Devine Rune
+item.doomsday_core.name=Doomsday Core
+
+mode.devine.enabled=你的灵魂归我了。
+mode.devine.disabled=笨蛋，我还是给回你吧。
+mode.doomsday.enabled=准备好了末日的到来了吗？
+mode.doomsday.disabled=好吧，你确实没有准备好。
+
 # 盔甲
 # 破布系列盔甲
 item.rag_helmet.name=破布帽

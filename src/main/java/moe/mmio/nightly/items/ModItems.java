@@ -36,6 +36,9 @@ public class ModItems {
   public static Item diamond_gel;
   public static Item gold_gel;
 
+  public static Item rune_of_devine_sorrow;
+  public static Item doomsday_core;
+
   public static Item rag_helmet;
   public static Item rag_chestplate;
   public static Item rag_legging;
@@ -61,6 +64,9 @@ public class ModItems {
     redstone_gel = new Item().setUnlocalizedName("redstone_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":redstone_gel").setCreativeTab(nightlyModCreativeTab);
     diamond_gel = new Item().setUnlocalizedName("diamond_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":diamond_gel").setCreativeTab(nightlyModCreativeTab);
     gold_gel = new Item().setUnlocalizedName("gold_gel").setMaxStackSize(64).setTextureName(NightlyMod.MODID + ":gold_gel").setCreativeTab(nightlyModCreativeTab);
+
+    rune_of_devine_sorrow = new ItemDevineRune().setUnlocalizedName("devine_rune").setTextureName(NightlyMod.MODID + ":devine_rune").setCreativeTab(nightlyModCreativeTab);
+    doomsday_core = new ItemDoomsdayCore().setUnlocalizedName("doomsday_core").setTextureName(NightlyMod.MODID + ":doomsday_core").setCreativeTab(nightlyModCreativeTab);
 
     rag_helmet = new RagArmor(0)
       .setUnlocalizedName("rag_helmet")
@@ -99,6 +105,9 @@ public class ModItems {
     GameRegistry.registerItem(redstone_gel, redstone_gel.getUnlocalizedName());
     GameRegistry.registerItem(diamond_gel, diamond_gel.getUnlocalizedName());
     GameRegistry.registerItem(gold_gel, gold_gel.getUnlocalizedName());
+
+    GameRegistry.registerItem(rune_of_devine_sorrow, rune_of_devine_sorrow.getUnlocalizedName());
+    GameRegistry.registerItem(doomsday_core, doomsday_core.getUnlocalizedName());
 
     GameRegistry.registerItem(rag_helmet, rag_helmet.getUnlocalizedName());
     GameRegistry.registerItem(rag_chestplate, rag_chestplate.getUnlocalizedName());
